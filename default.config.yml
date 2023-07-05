@@ -20,11 +20,11 @@ install_homebrew_if_missing: true
 upgrade_homebrew_packages: false
 
 brew_cask_packages:
-  - visual-studio-code
-  - sublime-text
-  - firefox
+  - visual-studio-code # comment 
   - google-chrome
+  - firefox
   - microsoft-edge
+  - sublime-text
   - docker
   - skype
   - discord
@@ -41,6 +41,9 @@ brew_cask_packages:
   - raspberry-pi-imager
   
 brew_packages:
+  - chromedriver #comment for re-install
+  - dbeaver-community # comment for re-install
+  - obs # comment for re-install
   - autoconf
   - bash-completion
   - docker-compose
@@ -49,6 +52,7 @@ brew_packages:
   - go
   - python@3.11
   - python@3.9
+  - python@3.8
   - node@18
   - node@16
   - nvm
@@ -60,10 +64,11 @@ brew_packages:
   - wget
   - openssl
   - http-server
-  - chromedriver
   - zsh-history-substring-search
   - zsh-autosuggestions
   - zsh-syntax-highlighting
+  - pipenv
+
 # python_modules:
 #   - configparser
 #   - pylint
