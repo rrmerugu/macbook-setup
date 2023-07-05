@@ -1,0 +1,27 @@
+---
+- name: Install user NPM packages.
+  npm:
+    name: "{{ item.name | default(item) }}"
+    state: "{{ item.state | default('present') }}"
+    version: "{{ item.version | default(omit) }}"
+    global: false
+    executable: "{{ item.executable | default(omit) }}"
+  loop: "{{ npm_packages }}"
+
+- name: Install user Pip packages.
+  pip:
+    name: "{{ item.name | default(item) }}"
+    extra_args: --user
+    state: "{{ item.state | default('present') }}"
+    version: "{{ item.version | default(omit) }}"
+    executable: "{{ item.executable | default('pip3') }}"
+  loop: "{{ pip_packages }}"
+
+- name: Install user Ruby gems.
+  gem:
+    name: "{{ item.name | default(item) }}"
+    state: "{{ item.state | default('present') }}"
+    version: "{{ item.version | default(omit) }}"
+    user_install: true
+    executable: "{{ item.executable | default(omit) }}"
+  loop: "{{ gem_packages }}"
