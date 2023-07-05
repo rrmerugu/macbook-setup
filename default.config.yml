@@ -38,6 +38,7 @@ brew_cask_packages:
   - postman
   - neo4j
   - sourcetree
+  - raspberry-pi-imager
   
 brew_packages:
   - autoconf
