@@ -41,6 +41,7 @@ brew_cask_packages:
   - raspberry-pi-imager
   
 brew_packages:
+  - gnupg
   - chromedriver #comment for re-install
   - dbeaver-community # comment for re-install
   - obs # comment for re-install
@@ -69,6 +70,9 @@ brew_packages:
   - zsh-autosuggestions
   - zsh-syntax-highlighting
   - pipenv
+  - awscli
+  - ngrok
+
 
 # python_modules:
 #   - configparser
