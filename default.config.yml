@@ -45,6 +45,7 @@ brew_packages:
   - chromedriver #comment for re-install
   - dbeaver-community # comment for re-install
   - obs # comment for re-install
+  - ngrok # comment for re-install
   - autoconf
   - bash-completion
   - docker-compose
@@ -71,7 +72,6 @@ brew_packages:
   - zsh-syntax-highlighting
   - pipenv
   - awscli
-  - ngrok
 
 
 # python_modules:
