@@ -39,6 +39,7 @@ brew_cask_packages:
   - neo4j
   - sourcetree
   - raspberry-pi-imager
+  - figma
   
 brew_packages:
   - gnupg

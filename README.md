@@ -19,6 +19,17 @@ ansible-playbook main.yml --verbose
 ```
 Add `--verbose` to command for verbose logging. Use `--ask-become-pass` if brew is not installed
 
+<!-- To review the logs, use `log stream` to read the stream of events happening on the machine. -->
+
+### manual steps
+
+```
+cp ./dotfiles/.zshrc ~/.zshrc
+cp ./dotfiles/.zshenv ~/.zshenv
+
+```
+This will override `.zshrc` and `.zshenv`.  These steps may be moved to anisble-playbook.
+
 ## References
 - https://gist.github.com/mrlesmithjr/f3c15fdd53020a71f55c2032b8be2eda
 - https://github.com/geerlingguy/mac-dev-playbook/tree/master 
