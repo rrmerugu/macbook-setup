@@ -9,6 +9,7 @@ xcode-select --install # install Apple's command line tools(starts installation 
 pip3 install --upgrade pip # upgrade pip
 pip3 install --user ansible # install ansible
 echo 'export PATH=$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$PATH' >> ~/.zshrc # add python and brew to path
+source ~/.zshrc
 ansible --version # check installation
 ```
 
