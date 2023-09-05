@@ -40,12 +40,12 @@ brew_cask_packages:
   - sourcetree
   - raspberry-pi-imager
   - figma
-  
+  - obs # comment for re-install
+
 brew_packages:
   - gnupg
   - chromedriver #comment for re-install
   - dbeaver-community # comment for re-install
-  - obs # comment for re-install
   - ngrok # comment for re-install
   - autoconf
   - bash-completion
