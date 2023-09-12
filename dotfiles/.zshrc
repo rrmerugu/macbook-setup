@@ -1,6 +1,3 @@
-export HOMEBREW_PREFIX=/opt/homebrew
-export PATH=$HOME/Library/Python/3.9/bin:$HOMEBREW_PREFIX/bin:$PATH
-
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
