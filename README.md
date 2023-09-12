@@ -30,6 +30,13 @@ cp ./dotfiles/.zshenv ~/.zshenv
 ```
 This will override `.zshrc` and `.zshenv`.  These steps may be moved to anisble-playbook.
 
+## For multi-user setup 
+
+
+```
+
+```
+
 ## References
 - https://gist.github.com/mrlesmithjr/f3c15fdd53020a71f55c2032b8be2eda
 - https://github.com/geerlingguy/mac-dev-playbook/tree/master 
