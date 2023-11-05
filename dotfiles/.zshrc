@@ -7,5 +7,6 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="$PATH:/Users/ravi.merugu/Library/Python/3.11/bin"
 
 ZSH_THEME=amuse

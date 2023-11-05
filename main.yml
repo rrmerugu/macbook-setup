@@ -1,7 +1,6 @@
 ---
 - name: "macbook-setup"
   hosts: localhost
-
   vars_files:
     - default.config.yml
 
@@ -25,8 +24,10 @@
         - install_homebrew_if_missing
 
   tasks:
-    - import_tasks: tasks/hello-world.yml
-    - import_tasks: tasks/development/brew-packages.yml
-      name: Install Brew packages
-    - import_tasks: tasks/development/extra-packages.yml
-      name: "Install pip/npm/gems"
+    # - import_tasks: tasks/hello-world.yml
+    # - import_tasks: tasks/development/brew-packages.yml
+    #   name: Install Brew packages
+    # - import_tasks: tasks/development/extra-packages.yml
+    #   name: "Install pip/npm/gems"
+    - import_tasks: tasks/development/vscode-extensions.yml
+      name: "Install vscode extensions"

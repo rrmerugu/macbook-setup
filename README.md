@@ -8,6 +8,7 @@ This repo contains ansible code to install packages for my needs - development, 
 xcode-select --install # install Apple's command line tools(starts installation in UI)
 pip3 install --upgrade pip # upgrade pip
 pip3 install --user ansible # install ansible
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo 'export PATH=$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$PATH' >> ~/.zshrc # add python and brew to path
 source ~/.zshrc
 ansible --version # check installation
@@ -15,7 +16,11 @@ ansible --version # check installation
 
 ## Usage
 ```
-ansible-playbook main.yml --verbose
+# install deps
+ansible-galaxy install -r requirements.yml
+
+# run playbook
+ansible-playbook main.yml --verbose  --ask-become-pass
 ```
 Add `--verbose` to command for verbose logging. Use `--ask-become-pass` if brew is not installed
 
@@ -35,6 +40,17 @@ This will override `.zshrc` and `.zshenv`.  These steps may be moved to anisble-
 
 ```
 
+```
+
+## Using sftp with Finder 
+
+```
+https://apple.stackexchange.com/a/414601
+```
+
+## Installing Rosetta ()
+```
+sudo softwareupdate --install-rosetta --agree-to-license
 ```
 
 ## References

@@ -73,7 +73,37 @@ brew_packages:
   - zsh-syntax-highlighting
   - pipenv
   - awscli
+  - osxfuse
+  - sshfs
 
+
+# https://marketplace.visualstudio.com/vscode
+# vscode_extensions:
+#   - ms-azuretools.vscode-docker
+#   - ms-python.python
+#   - ms-python.pylint
+#   - ms-python.flake8
+#   - ms-toolsai.jupyter
+#   - GitHub.vscode-github-actions
+#   - ms-vscode.vscode-typescript-next
+#   - Vue.vscode-typescript-vue-plugin
+#   - msjsdiag.vscode-react-native
+#   - dsznajder.es7-react-js-snippets
+#   - ms-vscode-remote.remote-ssh
+#   - HashiCorp.terraform
+#   - redhat.ansible
+#   - redhat.vscode-xml
+#   - ms-kubernetes-tools.vscode-kubernetes-tools
+#   - redhat.vscode-yaml
+#   - batisteo.vscode-django
+#   - GraphQL.vscode-graphql
+#   - GraphQL.vscode-graphql-syntax
+#   - formulahendry.auto-close-tag
+#   - dbaeumer.vscode-eslint
+#   - mikestead.dotenv
+#   - hediet.vscode-drawio
+#   - AnthonyJGatlin.vscode-cypher-query-language-tools
+#   - circleci.circleci
 
 # python_modules:
 #   - configparser
