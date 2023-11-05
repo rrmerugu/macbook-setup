@@ -9,4 +9,17 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:/Users/ravi.merugu/Library/Python/3.11/bin"
 
-ZSH_THEME=amuse
+
+
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="amuse"
+plugins=(
+  git
+  bundler
+  dotenv
+  macos
+  pipenv
+  pip
+)
+source $ZSH/oh-my-zsh.sh
