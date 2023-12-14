@@ -9,8 +9,8 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:/Users/ravi.merugu/Library/Python/3.11/bin"
 
-if [ -d "$HOMEBREW_PREFIX/lib/ruby/gems/3.2.0/bin" ]; then
-  export PATH=$HOMEBREW_PREFIX/lib/ruby/gems/3.2.0/bin:$PATH
+if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
+  export PATH=/opt/homebrew/opt/ruby/bin:$PATH
   export PATH=`gem environment gemdir`/bin:$PATH
 fi
 
