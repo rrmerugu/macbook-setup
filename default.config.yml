@@ -40,6 +40,7 @@ brew_cask_packages:
   - sourcetree
   - raspberry-pi-imager
   - figma
+  - balenaetcher
   - obs # comment for re-install
 
 brew_packages:
