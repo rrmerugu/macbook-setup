@@ -55,6 +55,12 @@ https://apple.stackexchange.com/a/414601
 sudo softwareupdate --install-rosetta --agree-to-license
 ```
 
+## Fixing permissions in multi-user env
+
+```
+ sudo chown -R "$USER":admin $(brew --prefix)/*
+```
+
 ## References
 - https://gist.github.com/mrlesmithjr/f3c15fdd53020a71f55c2032b8be2eda
 - https://github.com/geerlingguy/mac-dev-playbook/tree/master 
