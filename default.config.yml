@@ -81,7 +81,24 @@ brew_packages:
   - cypher-shell
   # - osxfuse
 
-
+# find ids using the command `mas search Tailscale`
+mac_apps:
+  # - name: DaVinci Resolve
+  #   id: 571213070
+  # - name: Microsoft Office
+  #   id: 462058435
+  - name: OneDrive
+    id: 823766827 
+  - name: Tailscale
+    id: 1475387142
+  - name: Microsoft Outlook           
+    id: 985367838
+  - name: Microsoft Word
+    id: 462054704
+  - name: Microsoft Excel
+    id: 462058435
+  - name: Microsoft PowerPoint
+    id: 462062816
 
 # https://marketplace.visualstudio.com/vscode
 # vscode_extensions:
