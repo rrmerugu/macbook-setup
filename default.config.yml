@@ -48,15 +48,18 @@ brew_packages:
   - chromedriver #comment for re-install
   - dbeaver-community # comment for re-install
   - ngrok # comment for re-install
+  - sshfs # comment for re-install
   - autoconf
   - bash-completion
   - docker-compose
   - git
   - git-lfs
   - go
+  - python@3.12
   - python@3.11
   - python@3.9
   - python@3.8
+  - node@20
   - node@18
   - node@16
   - yarn
@@ -75,9 +78,9 @@ brew_packages:
   - zsh-syntax-highlighting
   - pipenv
   - awscli
-  - osxfuse
-  - sshfs
   - cypher-shell
+  # - osxfuse
+
 
 
 # https://marketplace.visualstudio.com/vscode

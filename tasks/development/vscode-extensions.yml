@@ -30,5 +30,5 @@
           - mikestead.dotenv
           - hediet.vscode-drawio
           - AnthonyJGatlin.vscode-cypher-query-language-tools
-          - circleci.circleci
           - mhutchie.git-graph
+          # - circleci.circleci
