@@ -8,7 +8,7 @@
         visual_studio_code_extensions:
           - ms-azuretools.vscode-docker
           - ms-python.python
-          - ms-python.pylint
+          # - ms-python.pylint
           - ms-python.flake8
           - ms-toolsai.jupyter
           - GitHub.vscode-github-actions
