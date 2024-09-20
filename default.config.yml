@@ -83,8 +83,8 @@ brew_packages:
 
 # find ids using the command `mas search Tailscale`
 mac_apps:
-  # - name: DaVinci Resolve
-  #   id: 571213070
+  - name: DaVinci Resolve
+    id: 571213070
   # - name: Microsoft Office
   #   id: 462058435
   - name: OneDrive
