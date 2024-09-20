@@ -85,14 +85,12 @@ brew_packages:
 mac_apps:
   - name: DaVinci Resolve
     id: 571213070
-  # - name: Microsoft Office
-  #   id: 462058435
+  - name: Bitwarden
+    id: 1352778147         
   - name: OneDrive
     id: 823766827 
   - name: Tailscale
     id: 1475387142
-  # - name: Microsoft Outlook           
-  #   id: 985367838
   - name: Microsoft Word
     id: 462054704
   - name: Microsoft Excel

@@ -1,4 +1,4 @@
-
+export PATH=$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$PATH
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
@@ -26,3 +26,4 @@ plugins=(
   pip
 )
 source $ZSH/oh-my-zsh.sh
+
