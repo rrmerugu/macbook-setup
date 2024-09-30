@@ -97,4 +97,9 @@ mac_apps:
     id: 462058435
   - name: Microsoft PowerPoint
     id: 462062816
- 
+  - name: GoPro Quick
+    id: 561350520
+  - name: GoPro Player
+    id: 1460836908
+  - name: GoPro Webcam
+    id: 6477835262
