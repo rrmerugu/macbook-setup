@@ -41,6 +41,9 @@ brew_cask_packages:
   - raspberry-pi-imager
   - figma
   - balenaetcher
+  - raycast
+  - arc
+  - chatgpt
   - obs # comment for re-install
 
 brew_packages:
