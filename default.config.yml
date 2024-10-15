@@ -112,3 +112,5 @@ mac_apps:
     id: 409201541
   - name: Keynote
     id: 409183694
+  - name: Bitwarden
+    id: 1352778147
