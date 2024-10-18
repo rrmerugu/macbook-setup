@@ -7,7 +7,8 @@ This repo contains ansible code to install packages for my needs - development, 
 ```shell
 xcode-select --install # install Apple's command line tools(starts installation in UI)
 pip3 install --upgrade pip # upgrade pip
-pip3 install --user ansible # install ansible
+pip3 install --upgrade ansible 
+# pip3 install --user ansible # install ansible
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo 'export PATH=$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$PATH' >> ~/.zshrc # add python and brew to path
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
