@@ -114,3 +114,5 @@ mac_apps:
     id: 409183694
   - name: Bitwarden
     id: 1352778147
+  - name: Windows App(RDP)
+    id: 1295203466
