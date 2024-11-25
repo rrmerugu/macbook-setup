@@ -20,6 +20,7 @@ install_homebrew_if_missing: true
 upgrade_homebrew_packages: false
 
 brew_cask_packages:
+  - obs # comment for re-install
   - visual-studio-code # comment 
   - google-chrome
   - firefox
@@ -44,7 +45,7 @@ brew_cask_packages:
   - raycast
   - arc
   - chatgpt
-  - obs # comment for re-install
+  - warp
 
 brew_packages:
   - gnupg
