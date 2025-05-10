@@ -13,7 +13,7 @@
           - ms-toolsai.jupyter
           - GitHub.vscode-github-actions
           - ms-vscode.vscode-typescript-next
-          - Vue.vscode-typescript-vue-plugin
+          - Vue.volar
           - msjsdiag.vscode-react-native
           - dsznajder.es7-react-js-snippets
           - ms-vscode-remote.remote-ssh
@@ -31,5 +31,5 @@
           - hediet.vscode-drawio
           - AnthonyJGatlin.vscode-cypher-query-language-tools
           - mhutchie.git-graph
-          - Equinusocio.vsc-material-theme-icons
+          - vira.vsc-vira-theme
           # - circleci.circleci

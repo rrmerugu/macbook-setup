@@ -46,6 +46,8 @@ brew_cask_packages:
   - arc
   - chatgpt
   - warp
+  - tor-browser
+  - protege
 
 brew_packages:
   - gnupg
@@ -62,10 +64,10 @@ brew_packages:
   - python@3.12
   - python@3.11
   - python@3.9
-  - python@3.8
+  # - python@3.8
   - node@20
   - node@18
-  - node@16
+  # - node@16
   - yarn
   - nvm
   - rbenv
@@ -83,6 +85,7 @@ brew_packages:
   - pipenv
   - awscli
   - cypher-shell
+  - helm
   # - osxfuse
 
 # find ids using the command `mas search Tailscale`
