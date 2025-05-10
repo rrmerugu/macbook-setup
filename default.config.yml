@@ -67,6 +67,7 @@ brew_packages:
   # - python@3.8
   - node@20
   - node@18
+  - node@22
   # - node@16
   - yarn
   - nvm
