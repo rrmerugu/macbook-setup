@@ -88,6 +88,7 @@ brew_packages:
   - cypher-shell
   - helm
   # - osxfuse
+  - azurecli
 
 # find ids using the command `mas search Tailscale`
 mac_apps:
