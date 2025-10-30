@@ -89,6 +89,7 @@ brew_packages:
   - helm
   # - osxfuse
   - azurecli
+  - speedtest-cli
 
 # find ids using the command `mas search Tailscale`
 mac_apps:
