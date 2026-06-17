@@ -1,36 +1,42 @@
+# Installs extensions directly via the `code` CLI instead of the
+# gantsign ansible-role-visual-studio-code module. That module's
+# install-extension helper treats ANY stderr output as a failure unless it
+# matches the old `[DEP0005]` Buffer warning. Current VS Code bundles a Node
+# that prints `[DEP0169]` (url.parse) DeprecationWarning to stderr, so every
+# extension was misreported as `failed` even though it installed fine
+# (rc == 0). We key success off the exit code only.
 - name: install vs code extensions
-  ansible.builtin.include_role:
-    name: ansible-role-visual-studio-code
-    public: yes
-  vars:
-    users:
-      - username: '{{ ansible_user_id }}'
-        visual_studio_code_extensions:
-          - ms-azuretools.vscode-docker
-          - ms-azuretools.vscode-containers
-          - ms-vscode-remote.remote-containers
-          - ms-python.python
-          # - ms-python.pylint
-          # - ms-python.flake8
-          - ms-toolsai.jupyter
-          - GitHub.vscode-github-actions
-          - ms-vscode.vscode-typescript-next
-          - Vue.volar
-          - msjsdiag.vscode-react-native
-          - dsznajder.es7-react-js-snippets
-          - ms-vscode-remote.remote-ssh
-          - HashiCorp.terraform
-          - redhat.ansible
-          - redhat.vscode-xml
-          - ms-kubernetes-tools.vscode-kubernetes-tools
-          - redhat.vscode-yaml
-          - batisteo.vscode-django
-          - GraphQL.vscode-graphql
-          - GraphQL.vscode-graphql-syntax
-          - formulahendry.auto-close-tag
-          - dbaeumer.vscode-eslint
-          - mikestead.dotenv
-          - hediet.vscode-drawio
-          - AnthonyJGatlin.vscode-cypher-query-language-tools
-          - mhutchie.git-graph
-          # - circleci.circleci
+  ansible.builtin.command:
+    cmd: code --install-extension {{ item }} --force
+  register: vscode_ext_install
+  changed_when: "'was successfully installed' in vscode_ext_install.stdout"
+  failed_when: vscode_ext_install.rc != 0
+  loop:
+    - ms-azuretools.vscode-docker
+    - ms-azuretools.vscode-containers
+    - ms-vscode-remote.remote-containers
+    - ms-python.python
+    # - ms-python.pylint
+    # - ms-python.flake8
+    - ms-toolsai.jupyter
+    - GitHub.vscode-github-actions
+    - ms-vscode.vscode-typescript-next
+    - Vue.volar
+    - msjsdiag.vscode-react-native
+    - dsznajder.es7-react-js-snippets
+    - ms-vscode-remote.remote-ssh
+    - HashiCorp.terraform
+    - redhat.ansible
+    - redhat.vscode-xml
+    - ms-kubernetes-tools.vscode-kubernetes-tools
+    - redhat.vscode-yaml
+    - batisteo.vscode-django
+    - GraphQL.vscode-graphql
+    - GraphQL.vscode-graphql-syntax
+    - formulahendry.auto-close-tag
+    - dbaeumer.vscode-eslint
+    - mikestead.dotenv
+    - hediet.vscode-drawio
+    - AnthonyJGatlin.vscode-cypher-query-language-tools
+    - mhutchie.git-graph
+    # - circleci.circleci
