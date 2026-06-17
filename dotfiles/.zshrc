@@ -22,7 +22,6 @@ plugins=(
   bundler
   dotenv
   macos
-  pipenv
   pip
 )
 source $ZSH/oh-my-zsh.sh
