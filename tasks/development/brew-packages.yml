@@ -14,19 +14,30 @@
 
 - name: Installing Homebrew Cask Packages
   homebrew_cask:
-    name: "{{ brew_cask_packages }}"
+    name: "{{ item }}"
     state: present
-  register: result
-  until: result is successful
+  loop: "{{ brew_cask_packages }}"
+  register: cask_result
+  # Don't fail when brew reports a cask is already installed; treat it as a no-op.
+  failed_when:
+    - cask_result.failed | default(false)
+    - "'already installed' not in (cask_result.msg | default(''))"
+  changed_when: cask_result.changed | default(false)
   when: homebrew_check.stat.exists
 
 - name: Installing Homebrew Packages
-  retries: 1
   homebrew:
-    name: "{{ brew_packages }}"
+    name: "{{ item }}"
     state: present
-  register: result
-  until: result is successful
+  loop: "{{ brew_packages }}"
+  register: brew_result
+  # Some formulae (e.g. aliased ones like bash-completion) make the module
+  # re-run `brew install`, which prints "already installed and up-to-date".
+  # Treat that warning as success so the run continues instead of failing.
+  failed_when:
+    - brew_result.failed | default(false)
+    - "'already installed' not in (brew_result.msg | default(''))"
+  changed_when: brew_result.changed | default(false)
   when: homebrew_check.stat.exists
 
 

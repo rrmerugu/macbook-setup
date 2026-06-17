@@ -19,12 +19,16 @@ ansible --version # check installation
 
 ## Usage
 ```
-# install deps
+# install deps (roles + the community.general collection, which provides the
+# homebrew module; the version bundled with ansible is too old for Homebrew 6.x)
 ansible-galaxy install -r requirements.yml
 
 # run playbook
 ansible-playbook main.yml --verbose  --ask-become-pass
 ```
+If brew packages are wrongly reported as `failed` even though they install
+(`✔︎ Bottle ...`), your `community.general` is stale — refresh it with
+`ansible-galaxy install -r requirements.yml --force`.
 Add `--verbose` to command for verbose logging. Use `--ask-become-pass` if brew is not installed
 
 <!-- To review the logs, use `log stream` to read the stream of events happening on the machine. -->

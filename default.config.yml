@@ -27,17 +27,13 @@ brew_cask_packages:
   - microsoft-edge
   - sublime-text
   - docker
-  - skype
   - discord
   - microsoft-teams
   - zoom
   - bitwarden
   - spotify
-  - vagrant
-  - vagrant-manager
   - ngrok
   - postman
-  - neo4j
   - sourcetree
   - raspberry-pi-imager
   - figma
@@ -48,33 +44,33 @@ brew_cask_packages:
   - warp
   - tor-browser
   - protege
+  - claude-code
+  - chromedriver # cask, not a formula (deprecated upstream: Gatekeeper)
+  - dbeaver-community # cask, not a formula
 
 brew_packages:
-  - gnupg
-  - chromedriver #comment for re-install
-  - dbeaver-community # comment for re-install
+  - gnupg #comment for re-install
   - ngrok # comment for re-install
-  - sshfs # comment for re-install
-  - autoconf
+  - autoconf #comment for re-install
   - bash-completion
   - docker-compose
   - git
   - git-lfs
   - go
+  - python@3.14
+  - python@3.13
   - python@3.12
   - python@3.11
-  - python@3.9
-  # - python@3.8
-  - node@20
-  - node@18
+  - node@26
+  - node@24
   - node@22
-  # - node@16
+  - node@18
   - yarn
   - nvm
   - rbenv
   - ruby
   - ruby-build
-  - terraform
+  - hashicorp/tap/terraform # removed from homebrew-core (BSL); brew auto-taps
   - tree
   - watch
   - wget
@@ -87,9 +83,7 @@ brew_packages:
   - awscli
   - cypher-shell
   - helm
-  # - osxfuse
-  - azurecli
-  - speedtest-cli
+  - azure-cli
   - uv
 
 # find ids using the command `mas search Tailscale`

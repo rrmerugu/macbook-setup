@@ -1,6 +1,14 @@
-# Install a role from GitHub
-- name: ansible-role-visual-studio-code-extensions
-  src: https://github.com/gantsign/ansible-role-visual-studio-code-extensions
+collections:
+  # The homebrew module lives here. Older bundled versions (e.g. 7.5.2) detect
+  # install success by grepping `brew info` for "Poured from bottle", which
+  # Homebrew 6.x no longer prints, so every install is misreported as failed.
+  - name: community.general
+    version: ">=10.0.0"
 
-- name: ansible-role-visual-studio-code
-  src: https://github.com/gantsign/ansible-role-visual-studio-code
+roles:
+  # Install a role from GitHub
+  - name: ansible-role-visual-studio-code-extensions
+    src: https://github.com/gantsign/ansible-role-visual-studio-code-extensions
+
+  - name: ansible-role-visual-studio-code
+    src: https://github.com/gantsign/ansible-role-visual-studio-code
