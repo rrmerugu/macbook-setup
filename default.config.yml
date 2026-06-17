@@ -3,7 +3,10 @@ gem_packages: []
 # - name: bundler
 #   state: present # present/absent/latest, default: present
 #   version: "~> 1.15.1" # default: N/A
-npm_packages: []
+npm_packages:
+  - name: pnpm
+    state: present # present/absent/latest, default: present
+    global: true
 # - name: webpack
 #   state: present # present/absent/latest, default: present
 #   version: "^2.6" # default: N/A
@@ -47,6 +50,7 @@ brew_cask_packages:
   - claude-code
   - chromedriver # cask, not a formula (deprecated upstream: Gatekeeper)
   - dbeaver-community # cask, not a formula
+  - lm-studio
 
 brew_packages:
   - gnupg #comment for re-install
