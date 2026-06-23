@@ -41,7 +41,6 @@ brew_cask_packages:
   - raspberry-pi-imager
   - figma
   - balenaetcher
-  - raycast
   - arc
   - chatgpt
   - warp
@@ -51,6 +50,7 @@ brew_cask_packages:
   - chromedriver # cask, not a formula (deprecated upstream: Gatekeeper)
   - dbeaver-community # cask, not a formula
   - lm-studio
+  - claude
 
 brew_packages:
   - gnupg #comment for re-install
