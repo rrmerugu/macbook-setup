@@ -51,6 +51,7 @@ brew_cask_packages:
   - dbeaver-community # cask, not a formula
   - lm-studio
   - claude
+  - pgadmin4
 
 brew_packages:
   - gnupg #comment for re-install
