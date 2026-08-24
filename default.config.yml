@@ -90,6 +90,7 @@ brew_packages:
   - helm
   - azure-cli
   - uv
+  - iperf3
 
 # find ids using the command `mas search Tailscale`
 mac_apps:
