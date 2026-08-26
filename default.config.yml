@@ -91,6 +91,7 @@ brew_packages:
   - azure-cli
   - uv
   - iperf3
+  - rsync
 
 # find ids using the command `mas search Tailscale`
 mac_apps:
